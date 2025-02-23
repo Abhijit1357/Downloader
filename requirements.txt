@@ -1,0 +1,6 @@
+libcurl4-openssl-dev
+libjsoncpp-dev
+build-essential
+gcc
+g++
+cmake
