@@ -1,0 +1,15 @@
+{
+    "mongodb": {
+        "url": "mongodb://localhost:27017",
+        "database": "anime_database"
+    },
+    "anilab": {
+        "url": "https://anilab.com"
+    },
+    "netflix": {
+        "url": "https://www.netflix.com"
+    },
+    "crunchyroll": {
+        "url": "https://www.crunchyroll.com"
+    }
+}
