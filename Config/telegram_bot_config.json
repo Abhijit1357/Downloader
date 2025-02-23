@@ -1,0 +1,7 @@
+{
+    "telegram": {
+        "bot_token": "YOUR_TELEGRAM_BOT_TOKEN",
+        "bot_username": "YOUR_TELEGRAM_BOT_USERNAME",
+        "chat_id": "YOUR_TELEGRAM_CHAT_ID"
+    }
+}
