@@ -3,7 +3,7 @@ FROM ubuntu:latest
 #Set working directory
 WORKDIR /app
 
-Copy files
+#Copy files
 COPY . /app
 
 #Install dependencies
@@ -15,8 +15,8 @@ RUN apt-get update && apt-get install -y \
 #Build application
 RUN g++ -o main main.cpp curl.cpp json.cpp download.cpp -lcurl -ljsoncpp
 
-Expose port
+#Expose port
 EXPOSE 8080
 
-Run command
+#Run command
 CMD ["./main"]
