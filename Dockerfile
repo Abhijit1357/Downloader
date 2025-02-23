@@ -4,13 +4,19 @@ FROM ubuntu:latest
 WORKDIR /app
 
 #Copy files
-COPY . /app
+COPY main.cpp /app/
+COPY curl.cpp /app/
+COPY json.cpp /app/
+COPY download.cpp /app/
 
 #Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
     libcurl4-openssl-dev \
-    libjsoncpp-dev
+    libjsoncpp-dev \
+    gcc \
+    g++ \
+    cmake
 
 #Build application
 RUN g++ -o main main.cpp curl.cpp json.cpp download.cpp -lcurl -ljsoncpp
